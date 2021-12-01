@@ -13,6 +13,25 @@
 
 - ⚡ Fun fact **and no work experience with IT :)**
 
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+This project is web site for our HR Team. It will help them to find employee and connect employees in one space.
+	
+## Technologies
+Project is created with:
+* JS
+* HTML/CSS
+* MSSQL
+	
+## Setup
+To run this project, go with link ` 
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
