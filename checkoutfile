@@ -1,0 +1,12 @@
+                         Git checkout
+1. git checkout -  If no pathspec was given,will also update HEAD to set the specified branch as the current branch.
+2. git checkout [<branch>] -  switch to it by updating the index and the files in the working tree, and by pointing HEAD at the branch.
+3.git checkout -b <branch> --track <remote>/<branch> - If <branch> is not found but there does exist a tracking branch in exactly one remote (call it <remote>) with a matching name and --no-guess is not specified, treat as equivalent to
+4.git checkout -b|-B <new_branch> [<start point>] - Specifying -b causes a new branch to be created as if git-branch[1] were called and then checked out. In this case you can use the --track or --no-track options, which will be passed to git branch. As a convenience, --track without -b implies branch creation; If -B is given, <new_branch> is created if it doesn’t exist; otherwise, it is reset.
+5. git branch -f <branch> [<start point>]
+   git checkout <branch> - that is to say, the branch is not reset/created unless "git checkout" is successful.
+6. git checkout --detach [<branch>]
+git checkout [--detach] <commit> - Prepare to work on top of <commit>, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to the files in the working tree are kept, so that the resulting working tree will be the state recorded in the commit plus the local modifications.
+7.git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--] <pathspec>…​
+git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-from-file=<file> [--pathspec-file-nul] -When the <tree-ish> (most often a commit) is not given, overwrite working tree with the contents in the index. When the <tree-ish> is given, overwrite both the index and the working tree with the contents at the <tree-ish>.
+8.git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…​]-This is similar to the previous mode, but lets you use the interactive interface to show the "diff" output and choose which hunks to use in the result. See below for the description of --patch option.
